@@ -16,6 +16,9 @@ a simple API endpoint for monitoring your server CPU and RAM usage
 - install dependencies
 
 `$ pip install -r requirments.txt`
+- create .env file containing an access key
+
+`$ echo apikey=<your key> > .env`
 - run the server
 
 `$ flask --app WSGI run --host <your host, 0.0.0.0 to bind to all addresses> --port <your port>`
