@@ -13,6 +13,9 @@ a simple API endpoint for monitoring your server CPU and RAM usage
 - make a virtual environment
 
 `$ python3 -m venv venv`
+- activate virtual environment
+
+`$ source ./venv/bin/activate`
 - install dependencies
 
 `$ pip install -r requirments.txt`
