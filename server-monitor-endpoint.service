@@ -1,0 +1,14 @@
+[Unit]
+Description=Server monitor
+After=network.target
+
+[Service]
+Type=simple
+User=athan
+WorkingDirectory=/path/to/script
+ExecStart=/path/to/script/venv/bin/flask --app WSGI run --port 6060 --host 0.0.0.0
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
